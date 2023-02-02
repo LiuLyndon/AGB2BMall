@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Update angular and npm version
+# ---------------------------------------------------------------------
+## How to update each dependency in package.json to the latest version? 
+npm i -g npm-check-updates
+ncu -u
+npm install
+
+## Try the latest stable version of npm
+npm install -g npm@latest
+
+## Create 
+# ---------------------------------------------------------------------
+# module, routing
+ng g m [module-name] --routing
+# component
+ng g c [component-name]
