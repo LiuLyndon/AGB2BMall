@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "AGB2BMall": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "zh-TW": "src/locale/messages.zh.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +23,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": [
+              "zh-TW"
+            ],
             "outputPath": "dist/agb2-bmall",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -118,5 +127,13 @@
     "schematicCollections": [
       "@angular-eslint/schematics"
     ]
+  },
+  "schematics": {
+    "@angular-eslint/schematics:application": {
+      "setParserOptionsProject": true
+    },
+    "@angular-eslint/schematics:library": {
+      "setParserOptionsProject": true
+    }
   }
 }
